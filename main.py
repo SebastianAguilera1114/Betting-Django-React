@@ -27,7 +27,6 @@ print(hash("qwertyu"))
 
 import zlib
 
-s = b'Xewirovanie'
 # using zlib.crc32() method
 t = zlib.crc32(s)
 
