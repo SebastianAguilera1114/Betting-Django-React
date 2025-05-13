@@ -17,6 +17,20 @@ ALLOWED_HOSTS = ['*']
 
 # Application definition
 
+INSTALLED_APPS = [
+    'oneXbet.apps.OnexbetConfig',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'rest_framework',
+    'corsheaders',
+    'rest_framework_simplejwt',
+
+
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
