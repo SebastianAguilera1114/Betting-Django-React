@@ -6,8 +6,6 @@ from oneXbet.models import Betting, MyAppUser
 
 
 class RegisterUserForm(UserCreationForm):
-    username = forms.CharField(label='Логин',
-                               widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'login'}))
     password1 = forms.CharField(label='Пароль ',
                                 widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'password'}))
     password2 = forms.CharField(label='confirm',
