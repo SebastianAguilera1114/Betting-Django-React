@@ -29,11 +29,6 @@ def index(request):
     return render(request, 'index.html')
 
 
-def football(request):
-    context = {"leagues": League.objects.all()}
-    return render(request, template_name="oneXbet/football/football.html", context=context)
-
-
 def league(request, slug):
     context = {'league': League.objects.get(url=slug),
                "myclubs": Club.objects.filter(league__url=slug).order_by("-point").all()}
