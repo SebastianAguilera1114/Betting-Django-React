@@ -17,6 +17,10 @@ from oneXbet.models import League, Game, MyAppUser, Club
 from oneXbet.serializers import LeagueSerializer, ClubSerializer, RegisterSerializer, MyUserSerializer
 
 
+def handler404(request, exception):
+    return render(request, '404page.html', status=404)
+
+
 def handler500(exception):
     return redirect(handler404)
 
